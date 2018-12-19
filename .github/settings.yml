@@ -33,7 +33,8 @@ branches:
         require_code_owner_reviews: true
         dismissal_restrictions:
           users: []
-          teams: []
+          teams:
+            - admin
       # Required. Require status checks to pass before merging. Set to null to disable
       required_status_checks:
         # Required. Require branches to be up to date before merging.
@@ -45,4 +46,5 @@ branches:
       # Required. Restrict who can push to this branch. Team and user restrictions are only available for organization-owned repositories. Set to null to disable.
       restrictions:
         users: []
-        teams: []
+        teams:
+          - admin
